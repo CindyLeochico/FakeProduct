@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Horizontally center items */
+    align-items: center;
+    /* Vertically center items */
+}
+
+.card {
+    width: 450px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(#e5e4e4, #fff);
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.left-infor {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #935f82;
+    /* border-radius: 5px 0 0 5px; */
+}
+
+.left-infor p {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.right-infor {
+    position: relative;
+}
+
+.right-infor h4 {
+    padding-left: 10px;
+}
+
+.right-infor p {
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 0 10px;
+}
+
+.right-infor .linkedin-link {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+
+.right-infor .linkedin-link a {
+    text-decoration: none;
+    color: #6f395df0;
+}
+
+.right-infor .linkedin-link a:hover {
+    text-decoration: underline;
+    color: #935f82;
+}
+
+.filter {
+
+    text-align: center;
+    padding: 10px;
+}
+
+header {
+    background-color: #3a182ff0;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    /* Add smooth transition for hiding/showing */
+    z-index: 1000;
+    /* Ensure the header stays on top of other content */
+}
+
+.header-hidden {
+    top: -50px;
+    /* Move header out of view */
+}
+
+.content {
+    padding-top: 50px;
+    /* Adjust padding to match the height of the header */
+    /* Add any other styles for your content area */
+}
